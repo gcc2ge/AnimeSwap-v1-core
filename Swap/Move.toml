@@ -7,8 +7,15 @@ AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", subdir 
 LPCoin = { local= "../LPCoin" }
 LPResourceAccount = { local= "../LPResourceAccount" }
 TestCoin = { local= "../TestCoin" }
-U256 = { local= "../u256" }
-UQ64x64 = { local= "../uq64x64" }
+# U256 = { local= "../u256" }
+# UQ64x64 = { local= "../uq64x64" }
+[dependencies.UQ64x64]
+git = "https://github.com/pontem-network/UQ64x64.git"
+rev = "v0.3.7"
+
+[dependencies.U256]
+git = "https://github.com/pontem-network/U256.git"
+rev = "v0.3.8"
 
 [addresses]
 SwapDeployer = "0x16fe2df00ea7dde4a63409201f7f4e536bde7bb7335526a35d05111e68aa322c"
